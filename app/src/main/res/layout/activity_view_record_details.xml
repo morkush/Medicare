@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:backgroundTintMode="screen">
+  <include
+      android:id="@+id/toolbar"
+      layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="63dp"
+        android:text="Policy Number:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/policyNbr"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView1"
+        android:textColor="#312d2d"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/policyNbr"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="52dp"
+        android:text="First Name:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/firstNameText"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/policyNbr"
+        android:layout_alignTop="@+id/textView2"
+        android:textColor="#312d2d"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameText"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="46dp"
+        android:text="Last Name:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/lastNameText"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/firstNameText"
+        android:textColor="#312d2d"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageText"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignBottom="@+id/ageText"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="-33dp"
+        android:text="Age:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView1"
+        android:textColor="#312d2d"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageText"
+        android:layout_alignBottom="@+id/ageText"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/ageText"
+        android:text="Sex:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/sextText"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/heightText"
+        android:layout_alignTop="@+id/ageText"
+        android:textColor="#312d2d"
+        android:background="@drawable/spinnerwithborder" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_below="@+id/ageText"
+        android:layout_marginTop="35dp"
+        android:text="Weight:"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/ageText"
+        android:textColor="#312d2d"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightText"
+        android:layout_alignStart="@+id/textView5"
+        android:text="Height(cm):"
+        android:textColor="#312d2d"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignEnd="@+id/firstNameText"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="-11dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#312d2d" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/heightText"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/inputboxwithborders"
+        android:ems="10"
+        android:hint="Doctor's Note"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#312d2d"
+        android:textColorHint="#312d2d" />
+
+    <Button
+        android:id="@+id/addComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewHistory"
+        android:layout_alignBottom="@+id/viewHistory"
+        android:layout_alignStart="@+id/comment"
+        android:layout_weight="1"
+        android:textColor="#312d2d"
+        android:backgroundTint="#2598e2"
+        android:text="Add Comment" />
+
+    <Button
+        android:id="@+id/viewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/comment"
+        android:layout_below="@+id/comment"
+        android:layout_toEndOf="@id/uploadImg"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:textColor="#312d2d"
+        android:backgroundTint="#2598e2"
+        android:text="View History" />
+    <Button
+        android:id="@+id/uploadImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment"
+        android:layout_toEndOf="@id/addComment"
+        android:layout_alignBaseline="@+id/viewHistory"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:textColor="#312d2d"
+        android:backgroundTint="#2598e2"
+        android:text="Upload Image" />
+</RelativeLayout>
